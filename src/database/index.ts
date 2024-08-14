@@ -1,15 +1,15 @@
-// src/database/index.ts
+// database.ts
 
-import { Sequelize } from 'sequelize'
+import { Sequelize } from 'sequelize';
 
-export const database = new Sequelize({
+export const sequelize = new Sequelize({
   dialect: 'postgres',
   host: 'localhost',
   port: 5432,
   database: 'onebitflix_development',
   username: 'onebitflix',
   password: 'onebitflix',
-	define: {
+  define: {
     underscored: true
   }
-})
+});
